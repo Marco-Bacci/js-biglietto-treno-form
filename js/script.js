@@ -1,36 +1,28 @@
 
 // Recupero valori del form
-const button = document.getElementById (`send`)
-button.addEventListener (`click`, function(e))  
+const button = document.getElementById(`send`)
+button.addEventListener(`click`, function(e)  
 {
   e.preventDefault();
-  const km = document.getElementById (`km`).value
-  const age = document.getElementById (`age`).value
+  const km = parseInt(document.getElementById(`km`).value)
+  const age = parseInt(document.getElementById(`age`).value)
+  let ticketPrice = km * 0.21
   
-  console.log(km,age)
-}
+  if (age <= 18){
+    ticketPrice = ticketPrice * 0.8
+  }
+  
+  else if (age >= 65){
+    ticketPrice = ticketPrice * 0.6
+  }
+  
+  console.log(`km`,km,`age`,age , ticketPrice)
+})
 
 
   
   
-  
 
-  
-
-
-
-// variabile costo del biglietto
-  // let TicketPrice = numKm * 0.21
-  
-  // if (userAge <= 18){
-  //   TicketPrice = TicketPrice * 0.8
-  // }
-  
-  // else if (userAge >= 65){
-  //   TicketPrice = TicketPrice * 0.6
-  // }
-  
-  // console.log(numKm, userAge , ticketPrice.toFixed(2))
 
 // // recupero il button per inviare il form
 // const button = document.getElementById(`send`)
