@@ -8,6 +8,7 @@ button.addEventListener(`click`, function(e)
 {
   e.preventDefault();
 // richiamo gli input e stabilisco variabile prezzo del ticket
+  const name =(document.getElementById(`name`).value)
   const km = parseInt(document.getElementById(`km`).value)
   const age = parseInt(document.getElementById(`age`).value)
   let ticketPrice = km * 0.21
@@ -21,9 +22,10 @@ button.addEventListener(`click`, function(e)
   }
   
   resultForm.innerHTML = `<ul>
-    <li><strong> km ${km}</strong></li>
-    <li><strong> età ${age}</strong></li>
-    <li><strong> prezzo ticket ${ticketPrice.toFixed(2)} &#8364</strong></li>
+    <li><strong> name: ${name}</strong></li>
+    <li><strong> km: ${km}</strong></li>
+    <li><strong> età: ${age}</strong></li>
+    <li><strong> prezzo ticket: ${ticketPrice.toFixed(2)} &#8364</strong></li>
   </ul>`
     
 })

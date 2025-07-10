@@ -13,27 +13,56 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <form action="">
-        <label for="" class="form-label"> km da percorrere</label>
-        <input
-          type="text"
-          id="km"
-          name="km"
-          placeholder="inserisci km"
-          class="form-control"
-        />
-        <label for="" class="form-label"> inserisci età</label>
-        <input
-          type="text"
-          id="age"
-          name="age"
-          placeholder="inserisci età"
-          class="form-control"
-        />
-        <button id="send" name="" type="submit">invia</button>
-      </form>
+    <div class="container bg-info">
+      <div class="row g-4">
+        <h1 class="text-center text-white">
+          CALCOLA IL PREZZO DEL TUO BIGLIETTO
+        </h1>
+
+        <form action="">
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <label for="" class="form-label text-white">
+                Nome e Cognome</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="inserisci nome e cognome"
+                class="form-control"
+              />
+            </div>
+            <div class="col-12 col-md-4">
+              <label for="" class="form-label text-white">
+                km da percorrere</label
+              >
+              <input
+                type="text"
+                id="km"
+                name="km"
+                placeholder="inserisci km"
+                class="form-control"
+              />
+            </div>
+            <div class="col-12 col-md-4">
+              <label for="" class="form-label text-white"> inserisci età</label>
+              <input
+                type="text"
+                id="age"
+                name="age"
+                placeholder="inserisci età"
+                class="form-control"
+              />
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button id="send" name="" type="submit" class="btn btn-primary">
+                invia
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <div id="result-form"></div>
 
