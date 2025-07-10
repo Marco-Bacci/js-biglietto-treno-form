@@ -1,3 +1,15 @@
+// recupero il button per inviare il form
+const button = document.getElementById(`send`)
+// creo l'evento click sul pulsante
+button.addEventListener (`click`, function(e){
+  e.preventDefault();
+  // Recupero valori del form
+  const name = document.getElementById (`name`).value;
+  const numKm = document.getElementById (`km`).value;
+  const userAge = document.getElementById (`eta`).value;
+  console.log(name, numKm, userAge)
+
+})
 
 
 
@@ -14,23 +26,3 @@
 
 
 
-
-
-
-
-
-
-// const UserAge = parseFloat(prompt ('inserisci età'))
-// const NumKm = parseFloat(prompt ('inserisci numero km'))
-// let TicketPrice = NumKm * 0.21
-
-// if (UserAge <= 18){
-//   TicketPrice = TicketPrice * 0.8
-// }
-
-
-// else if (UserAge >= 65){
-//   TicketPrice = TicketPrice * 0.6
-// }
-
-// console.log(`final price € ${TicketPrice.toFixed(2)}`)
