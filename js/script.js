@@ -23,7 +23,7 @@ button.addEventListener(`click`, function(e)
   resultForm.innerHTML = `<ul>
     <li><strong> km ${km}</strong></li>
     <li><strong> età ${age}</strong></li>
-    <li><strong> prezzo ticket ${ticketPrice} &#8364</strong></li>
+    <li><strong> prezzo ticket ${ticketPrice.toFixed(2)} &#8364</strong></li>
   </ul>`
     
 })
