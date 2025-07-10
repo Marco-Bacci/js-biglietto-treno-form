@@ -1,9 +1,13 @@
 
-// Recupero valori del form
+// Recupero button 
 const button = document.getElementById(`send`)
+// recupero il risultato del form 
+const resultForm = document.getElementById(`result-form`)
+// creo event listener
 button.addEventListener(`click`, function(e)  
 {
   e.preventDefault();
+// richiamo gli input e stabilisco variabile prezzo del ticket
   const km = parseInt(document.getElementById(`km`).value)
   const age = parseInt(document.getElementById(`age`).value)
   let ticketPrice = km * 0.21
@@ -16,20 +20,15 @@ button.addEventListener(`click`, function(e)
     ticketPrice = ticketPrice * 0.6
   }
   
-  console.log(`km`,km,`age`,age , ticketPrice)
+  resultForm.innerHTML = `<ul>
+    <li><strong> km ${km}</strong></li>
+    <li><strong> età ${age}</strong></li>
+    <li><strong> prezzo ticket ${ticketPrice} &#8364</strong></li>
+  </ul>`
+    
 })
 
 
   
   
-
-
-// // recupero il button per inviare il form
-// const button = document.getElementById(`send`)
-
-// // creo l'evento click sul pulsante
-// button.addEventListener (`click`, function(e){
-//   e.preventDefault();
-// })
-
 
