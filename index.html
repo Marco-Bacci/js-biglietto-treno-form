@@ -14,8 +14,10 @@
   </head>
   <body>
     <div class="container bg-primary p-3">
-      <h1 class="text-center text-white m-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <div class="container mt-5 p-3 bg-info">
+      <h1 class="text-center text-white m-4">
+        CALCOLA IL PREZZO DEL TUO BIGLIETTO
+      </h1>
+      <div class="container mt-5 p-3 bg-info rounded">
         <div class="row g-4">
           <form action="">
             <div class="row g-4">
@@ -62,6 +64,30 @@
               </div>
             </div>
           </form>
+        </div>
+      </div>
+      <h2 class="text-center text-white">IL TUO BIGLIETTO</h2>
+      <div class="container mt-5 p-3 bg-info rounded">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <h4 class="text-info">dati del passeggero</h4>
+              <div id="show-name">name</div>
+              <div id="show-age">age</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <h4 class="text-info">km del tragitto</h4>
+              <div id="show-km">km</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <h4 class="text-info">Costo del biglietto</h4>
+              <div id="show-price">prezzo</div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="result-form"></div>

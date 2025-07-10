@@ -21,13 +21,17 @@ button.addEventListener(`click`, function(e)
     ticketPrice = ticketPrice * 0.6
   }
   
-  resultForm.innerHTML = `<ul>
-    <li><strong> name: ${name}</strong></li>
-    <li><strong> km: ${km}</strong></li>
-    <li><strong> età: ${age}</strong></li>
-    <li><strong> prezzo ticket: ${ticketPrice.toFixed(2)} &#8364</strong></li>
-  </ul>`
+  // resultForm.innerHTML = `<ul>
+  //   <li><strong> name: ${name}</strong></li>
+  //   <li><strong> km: ${km}</strong></li>
+  //   <li><strong> età: ${age}</strong></li>
+  //   <li><strong> prezzo ticket: ${ticketPrice.toFixed(2)} &#8364</strong></li>
+  // </ul>`
     
+  document.getElementById('show-name').innerText = name   
+  document.getElementById('show-age').innerText = age
+  document.getElementById('show-km').innerText = km
+  document.getElementById('show-price').innerText = ticketPrice.toFixed(2)
 })
 
 
